@@ -1,0 +1,22 @@
+.full{
+    width: 200%;
+    height: 600px;
+    background-image: url(../../../assets/changePassword.jpg);
+     background-repeat: no-repeat;
+     background-size: cover; 
+}
+.fullScreen{
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    right: 0;
+    bottom:0;
+    background-image: url(../../../assets/food1.jpg);
+     background-repeat: no-repeat;
+     background-size: cover; 
+      background-attachment: fixed;
+    background-size: 100% 100%;
+    }
+    .tab-content{
+        background-color: white;
+    }

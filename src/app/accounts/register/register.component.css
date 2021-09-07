@@ -1,0 +1,7 @@
+.full{
+    width: 70%;
+    height: 700px;
+    background-image: url(../../../assets/panda.jpg);
+     background-repeat: no-repeat;
+     background-size: cover; 
+}

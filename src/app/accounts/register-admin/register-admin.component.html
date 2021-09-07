@@ -1,0 +1,20 @@
+
+<div style="display: flex;justify-content: space-evenly;">
+    <div class="full">
+    </div>
+    <div class="container" style="margin-top: 15%;">
+        <h3>Admin Register</h3>
+
+        <input  type="text" class="form-control" placeholder="Enter the User Name"
+            [(ngModel)]='newUname'> <br>
+        <input  type="password" class="form-control" placeholder="Enter password"
+            [(ngModel)]='newPwd'> <br>
+            
+        <input type="text" class="form-control" placeholder="Enter the Location"
+        [(ngModel)]='location'> <br>
+        <input type="email" class="form-control" placeholder="Enter mail id"
+            [(ngModel)]='mail'> <br>
+        <button style="margin-top: 1%; width:200px;" class="btn btn-success" (click)='addAdmin()'>Register</button>
+        <h4 style="color: green;">{{msg}}</h4>
+</div>
+</div>

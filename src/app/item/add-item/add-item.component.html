@@ -1,0 +1,21 @@
+
+<div style="display: flex;justify-content: space-evenly;">
+    <div class="full">
+    </div>
+    <div class="container" style="margin-top: 15%;">
+        <h3>Add New Item</h3>
+
+        <input  type="text" class="form-control" placeholder="Enter the Item Name"
+            [(ngModel)]='newName'> <br>
+        <input  type="number" class="form-control" placeholder="Enter the price"
+            [(ngModel)]='newPrice'> <br>
+        <input  type="number" class="form-control" placeholder="Enter the calories"
+            [(ngModel)]='newCaleroies'> <br>
+        <input  type="text" class="form-control" placeholder="Enter the newDescription"
+            [(ngModel)]='newDescription'> <br>
+        <input  type="number" class="form-control" placeholder="Enter the newQtyAvailable"
+            [(ngModel)]='newQtyAvailable'> <br>
+        <button style="margin-top: 1%; width:200px;" class="btn btn-success" (click)='addItem()'>add</button>
+        <h4 style="color: green;">{{msg}}</h4>
+</div>
+</div>

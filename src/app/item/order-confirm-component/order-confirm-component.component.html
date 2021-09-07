@@ -1,0 +1,34 @@
+<nav class="navbar navbar-default" >
+    <div class="container-fluid">    
+     <div class="navbar-header">
+        <a class="navbar-brand"routerLink="/home"style="color: rgb(130, 252, 8);">Kitchen Story</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a routerLink="../../custHome/{{uname}}">Home</a></li>
+        <li><a routerLink="../../searchItem" Activerouter>Search Item</a></li>
+        <li><a routerLink="../../items">Menu</a></li>
+        <li><a (click)='logout()'>logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<div class="jumbotron jumbotron-fluid col-lg-4" style="margin-left: 30%;">
+    <div class="container" style="text-align: center;">
+        <u><h3 style="color: blue;">Order Confirmation Page</h3></u>
+        <h4>ID : {{item.id}}</h4>
+        <h4>Name : {{item.itemName}}</h4>
+        <h4>Price : {{item.price}}</h4>
+        <h4>calories : {{item.caleroies}}</h4>
+        <h4>Description : {{item.description}}</h4>
+        <h4>Quantity Ordered : {{qty}}</h4>
+        <p>---------------------------------</p>
+        <h4>The bill amount is : {{price}}</h4>
+        <h4>GST of 18% : {{GST}}</h4>
+        <p>---------------------------------</p>
+        <h4>The  total amount is : {{total}}</h4>
+        <p>---------------------------------</p>
+        <p style="color: green;">Thanks for ordering ,Visit again !!</p>
+        <button style="margin-top: 1%; width:200px;" class="btn btn-success" routerLink="../../items">Back</button>
+
+    </div>
+</div>
